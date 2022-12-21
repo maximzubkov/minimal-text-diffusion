@@ -35,5 +35,6 @@ WORKDIR /minimal-text-diffusion
 COPY . /minimal-text-diffusion
 
 RUN pip install numpy==1.23.3
+RUN pip install --ignore-installed mpi4py==3.1.4
 
 RUN pip cache purge 
