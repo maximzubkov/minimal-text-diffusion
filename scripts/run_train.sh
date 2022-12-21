@@ -77,6 +77,6 @@ fi
 
 
 
-export CUDA_VISIBLE_DEVICES=$GPU && python -u src/train_infer/train.py "${ARGS[@]}"
+export CUDA_VISIBLE_DEVICES=$GPU && python -u train.py "${ARGS[@]}"
 
 
