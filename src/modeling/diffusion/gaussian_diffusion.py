@@ -295,6 +295,8 @@ class GaussianDiffusion:
         decoder_nll = self.token_discrete_loss(x_start, get_logits, input_ids)
 
         terms["loss"] = terms["mse"] + (decoder_nll + tT_loss)
+        terms["decoder_nll"] = decoder_nll
+        terms["tT_loss"] = tT_loss
 
         return terms
 
